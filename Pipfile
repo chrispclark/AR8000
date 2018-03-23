@@ -10,6 +10,8 @@ name = "pypi"
 qtpy = "*"
 "pyqt5" = "*"
 daiquiri = "*"
+pyserial = "*"
+sqlalchemy = "*"
 
 
 [dev-packages]
