@@ -2,6 +2,7 @@
 AOR AR8000 Wideband receiver control interface.
 
 Provides serial conectivity to the AR8000 under Python3.5 and PyQt5 via linux.
+
 Provies GUI interface to control the radio function set.
 
 Virtual enviroment via pipenv.
