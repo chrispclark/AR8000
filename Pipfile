@@ -1,0 +1,21 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+
+qtpy = "*"
+"pyqt5" = "*"
+daiquiri = "*"
+
+
+[dev-packages]
+
+
+
+[requires]
+
+python_version = "3.5"
