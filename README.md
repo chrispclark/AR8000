@@ -6,3 +6,5 @@ Provies GUI interface to control the radio function set.
 
 Virtual enviroment via pipenv.
 
+Just starting out, very buggy but it does read, write amd control the radio.
+
