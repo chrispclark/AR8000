@@ -6,7 +6,8 @@ The AR8000 covers radio frequencies between 500KHz to 1900MHz without gaps.
 This code provides serial conectivity to the AR8000 under Python3.5 and PyQt5 via linux with a simple physical serial interface.
 
 You may have to insert the serial device
-sudo modprobe usbserial vendor=0x067b product=0x2303
+"sudo modprobe usbserial vendor=0x067b product=0x2303"
+I will expand the explanation out, this one just works for me.
 
 Provies GUI interface to control the radio function set.
 
