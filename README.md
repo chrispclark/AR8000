@@ -9,6 +9,8 @@ You may have to insert the serial device:
 
 "sudo modprobe usbserial vendor=0x067b product=0x2303"
 
+Add user to dailot group "sudo usermod -a -G dialout $USER"
+
 I will expand the explanation out, this insertion just works for me.
 
 Provies GUI interface to control the radio function set.
