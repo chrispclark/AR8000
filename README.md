@@ -7,9 +7,12 @@ This code provides serial conectivity to the AR8000 under Python3.5 and PyQt5 vi
 
 You may have to insert the serial device:
 
+find vendor and product numbers via 'lsusb'
+Then inset similar to below:
 "sudo modprobe usbserial vendor=0x067b product=0x2303"
 
-Add user to dailot group "sudo usermod -a -G dialout $USER"
+Add user to dialout group:
+"sudo usermod -a -G dialout $USER"
 
 I will expand the explanation out, this insertion just works for me.
 
