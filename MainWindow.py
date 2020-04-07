@@ -123,7 +123,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         station_db.list_it(self.tableWidget_Station)
         print("\n")
         logger.info("Column Count" +str(self.tableWidget_Station.columnCount()))
-        for column in range(0, self.tableWidget_Station.columnCount()):   
+        for column in range(self.tableWidget_Station.columnCount()):
             itemText = self.tableWidget_Station.item(self.tableWidget_Station.currentRow(), column).text()
             logger.info("Item Text - " + itemText)
        
@@ -139,12 +139,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         logger.info("serialResponseXM %s: " % (serialResponse))
         
     def mymethod_AutoStepMode(self):
-        if self.checkBox_AutoStepMode.isChecked():
-            sCommand = "AU1"
-            self.serialResponse = self.ar8000.openit(sCommand)
-        else:
-            sCommand = "AU0"
-            self.serialResponse = self.ar8000.openit(sCommand)
+        sCommand = 'AU1' if self.checkBox_AutoStepMode.isChecked() else 'AU0'
+        self.serialResponse = self.ar8000.openit(sCommand)
         sCommand = "AU"
         self.serialResponse = self.ar8000.openit(sCommand)
         logger.info("AutoStepMode" + self.serialResponse)
